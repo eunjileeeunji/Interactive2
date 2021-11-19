@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background:;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.centerContent {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.introduction {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#bgImage{
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45vh;
+  left: 50vw;
+  width: 700px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.introduction:hover #bgImage {
+  opacity: 0.2;
+}
+
+.introduction:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /*background-color: #fff;
+  padding: 16px 32px;*/
+  color: #FF524B;
+  font-size: 60px;
+  font-family: 'Patua One', slab-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.first {
+  position: absolute;
+  width: 600px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 40px;
+}
+
+.grid-item {
+  text-align: left;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Patua One', slab-serif;
+  margin-top: 11px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  color: #FF524B;
+}
+
+h2 {
+  font-size: 70px;
+  font-family: 'Patua One', slab-serif;
+  margin-left: 6px;
+  margin-top: -8px;
+  margin-bottom: 0;
+}
+
+.additional {
+  position: absolute;
+  width: 800px;
+}
+
+.grid-container-2 {
+  margin-top: 50px;
+}
+
+.grid-item-2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 95px;
+  width: 800px;
+  /*margin-top: 50px;*/
+}
+
+h3 {
+  font-size: 18px;
+  font-family: 'Gudea', sans-serif;
+  line-height: 1.5;
+  width: 810px;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 8px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: 'Bree Serif', sans-serif;
+  text-align: center;
+  color: #FF524B;
+  margin-bottom: 5px;
+}
+
+text-2 {
+  font-size: 16px;
+  font-family: 'Gudea', sans-serif;
+  line-height: 1.5;
+  align-items: center;
+}
+
+#padding-1 {
+  padding-left: 9px;
+}
+
+#padding-2 {
+  padding-left: 48px;
+}
+
+#padding-3 {
+  padding-right: 42px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Gudea', sans-serif;
+}
+
+.second {
+  position: absolute;
+  text-align: center;
+}
+
+h4 {
+  font-size: 35px;
+  font-family: 'Patua One', slab-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+#gameImage {
+  display: block;
+  border-color: black; 
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px; 
+  margin-left: 170px;
+}
+
+#kitchenImageBox {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hotspot {
+  position: absolute;
+  width:30px;
+  height:50px;
+  /*background: red;*/
+  transform: translate(-25px,-25px);
+}
+
+.grab {
+  cursor: -webkit-grab; 
+  cursor: grab;
+}
+
+.gaugebar {
+  height: 35px;
+  width: 57%; 
+  background: lightgrey;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  left: 310px;
+}
+
+.fill {
+  height: 35px;
+  width: 0%; 
+  background: #FFE132;
+  transition: width 200ms ease;
+  position: absolute;
+  left:0;
+}
+
+h5 {
+  font-size: 14px;
+  font-family: 'Gudea', sans-serif;
+  text-align: left;
+  width: 800px;
+  position: relative;
+  left: 330px;
+  margin-top: 8px;
+}
+
+.third {
+  position: absolute;
+  text-align: left;
+  width: 50vw;
+}
+
+table {
+  margin-top: 35px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: black;
+  width: 730px;
+}
+
+th {
+  font-size: 18px;
+  font-family: 'Gudea', sans-serif;
+  border-style:solid;
+  border-width: 2px;
+  background-color: #FF5F53;
+  text-align: center;
+  line-height: 1.8;
+  padding: 0.3em;
+}
+
+td {
+  font-size: 18px;
+  font-family: 'Gudea', sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  line-height: 1.8;
+  padding: 0.3em;
+  padding-left: 0.5em;
+}
+
+.checkBox {
+  width:30px;
+}
+
+.checked {
+  /*background-color: red;*/
+  background-image: url("../checkmark.svg");
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 12px;
+  position: absolute;
+  z-index: 1;
+}
+
+.description {
+  font-size: 14px;
+  line-height:
+  font-family: 'Gudea', sans-serif;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.fourth {
+  position: absolute;
+  text-align: left;
+  width: 600px;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+p1 {
+  padding: 19.5px 23px 18px 21px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Gudea', sans-serif;
+  background-color: #FFF6C0;
+  border-radius: 10px;
+}
+
+/*.item-bg {
+  background-color: #FFF6C0;
+  border-radius: 15px;
+  opacity: 40%;
+}*/
+
+.placement {
+  padding-top: 30px;
+}
+
+#last {
+  color: #FF524B;
+  font-size: 35px;
+  font-family: 'Patua One', slab-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 230px;
+  margin-left: 28px;
+  line-height: 50px;
+}
+
+#copyright {
+  font-size: 13px;
+  font-family: 'Gudea', sans-serif;
+  text-align: center;
+  padding: 15px;
+  background-color: #3AB0A4;
+  color: white;
+}

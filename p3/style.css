@@ -1,0 +1,507 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#indicOne {
+  position:fixed;
+  right: 50px;
+  top:0;
+  width: 25px;
+  height: 100vh;
+/*   background-color: #FCF2CA; */
+/*   background-color: #ADC565; */
+  background-color: #4A75B2;
+}
+
+#indicTwo {
+  position:fixed;
+  right: 25px;
+  top:0;
+  width: 25px;
+  height: 100vh;
+/*   background-color: #EDD3CC; */
+  background-color: #F5BD29;
+}
+
+#indicThree {
+  position:fixed;
+  right: 0px;
+  top:0;
+  width: 25px;
+  height: 100vh;
+  background-color: brown;
+}
+
+#indicOne:hover {
+  opacity: 0.7;
+}
+
+#indicTwo:hover {
+  opacity: 0.7;
+}
+
+#indicThree:hover {
+/*   transform: scale(1.2); */
+  opacity: 0.8;
+}
+
+.class-for-index {
+  height: 100vh;
+  background-color: #FCF2CA;
+}
+
+.class-for-index #indicOne {
+  display: none;
+}
+
+.class-for-index #indicTwo {
+  animation: dropDown 800ms ease;
+}
+
+.class-for-index #indicThree {
+  animation: dropDown 600ms ease;
+}
+
+@keyframes dropDown {
+  0% {
+    top: -700px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+#homeOne {
+  position: absolute;
+  width: 600px;
+  top: 100px;
+  left: 150px;
+}
+
+#homeTwo {
+  position: absolute;
+  height: 520px;
+  right: 48px;
+  bottom: 0px;
+}
+
+#homebrush {
+  position: absolute;
+  width: 550px;
+  right: 130px;
+  bottom: 53px;
+}
+
+#sfmomalogo {
+  position: absolute;
+  width: 80px;
+  left: 16px;
+  bottom: 8px; 
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+#extitle {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+#location {
+  position: absolute;
+  top: 12px;
+  left: 80vh;
+}
+
+#date {
+  position: absolute;
+  top: 12px;
+  right: 70px;
+  text-align: right;
+}
+
+#quote {
+  position: absolute;
+  width: 450px;
+  bottom:70px;
+  right: 160px;
+}
+
+.class-for-about {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.class-for-about #indicOne {
+  right: unset;
+  left: 0;
+  animation:fadeFromHover 700ms ease;
+}
+
+@keyframes fadeFromHover {
+  0% {
+    opacity: 0.8;
+/*     left:calc(100vw - 20px); */
+    transform:scale(5);
+  }
+  100% {
+    transform:scale(1);
+/*     left:0; */
+    opacity: 1;
+  }
+}
+
+.class-for-about #indicTwo {
+  display: none;
+}
+
+#eteladnan {
+  position: absolute;
+  height: 798px;
+  left: 25px;
+  margin: 0;
+}
+
+#logotype {
+  position: absolute;
+  width: 230px;
+  top: 110px;
+  left: 670px;
+}
+
+#subText {
+  position: absolute;
+  width: 250px;
+  top: 160px;
+  left: 670px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+#description {
+  position: absolute;
+  width: 450px;
+  top: 220px;
+  left: 670px;
+  /*display: inline-block;*/
+}
+
+#brush {
+  position: absolute;
+  width: 470px;
+  right: 60px;
+  bottom: 67px;
+}
+
+p {
+  line-height: 23px;
+  font-size: 15px;
+}
+
+#quoteTwo {
+  position: absolute;
+  right: 133px;
+  bottom: 100px;
+  width: 425px;
+}
+
+#aboutOne {
+  position: absolute;
+  width: 350px;
+  top: 40px;
+  right: 120px;
+  opacity: 90%;
+}
+
+#sfmomaTwo {
+  position: absolute;
+  width: 100px;
+  bottom: 70px;
+  left: 670px;
+}
+
+.class-for-gallery {
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.class-for-gallery #indicOne {
+  right: unset;
+  left: 0;
+}
+
+.class-for-gallery #indicTwo {
+  right: unset;
+  left: 25px;
+}
+
+.class-for-gallery #indicThree {
+  display: none;
+}
+
+#artbarOne {
+  position: absolute;
+  height: 798px;
+  left: 50px;
+}
+
+#artbarOne:hover {
+  opacity: 0.7;
+}
+
+#artbarTwo {
+  position:absolute;
+  height: 798px;
+  left: 197px;
+}
+
+#artbarTwo:hover {
+  opacity: 0.7;
+}
+
+#artbarThree {
+  position:absolute;
+  height: 798px;
+  left: 350px;
+}
+
+#artbarThree:hover {
+  opacity: 0.7;
+}
+
+#artbarFour {
+  position:absolute;
+  height: 798px;
+  left: 506px;
+}
+
+#artbarFour:hover {
+  opacity: 0.7;
+}
+
+#artbarFive {
+  position:absolute;
+  height: 798px;
+  right: 624px;
+}
+
+#artbarFive:hover {
+  opacity: 0.7;
+}
+
+#artbarSix {
+  position:absolute;
+  height: 798px;
+  right: 468px;
+}
+
+#artbarSix:hover {
+  opacity: 0.7;
+}
+
+#artbarSeven{
+  position:absolute;
+  height: 798px;
+  right: 312px;
+}
+
+#artbarSeven:hover {
+  opacity: 0.7;
+}
+
+#artbarEight {
+  position:absolute;
+  height: 798px;
+  right: 156px;
+}
+
+#artbarEight:hover {
+  opacity: 0.7;
+}
+
+#artbarNine {
+  position:absolute;
+  height: 798px;
+  right: 0;
+}
+
+#artbarNine:hover {
+  opacity: 0.7;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .class-for-gallery {
+  position: relative;
+  overflow: hidden;
+} */
+
+.artwork {
+  width: 900vw;
+  padding-left: 0;
+/*   display: block; */
+  margin: 0;
+}
+
+.artwork>li {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  /*overflow-y: hidden;*/
+}
+
+.artpiece {
+/*   position: absolute; */
+  height: 785px;
+  display: block;
+  margin: 0;
+}
+
+.center {
+  height: 785px;
+  display: block;
+  margin: 0px auto;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 8px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 13px;
+}
+
+.copyright {
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#artworkOne {
+  position: absolute;
+  width: 230px;
+  right: 140px;
+  bottom: 90px;
+}
+
+#artworkTwo {
+  position: absolute;
+  width: 230px;
+  right: 175px;
+  bottom: 90px;
+}
+
+#artworkThree {
+  position: absolute;
+  width: 230px;
+  right: 105px;
+  bottom: 90px;
+}
+
+#artworkFour {
+  position: absolute;
+  width: 230px;
+  right: 90px;
+  bottom: 90px;
+}
+
+#artworkFive {
+  position: absolute;
+  width: 230px;
+  right: 120px;
+  bottom: 90px;
+}
+
+#artworkSix {
+  position: absolute;
+  width: 230px;
+  right: 125px;
+  bottom: 90px;
+}
+
+#artworkSeven {
+  position: absolute;
+  width: 230px;
+  right: 125px;
+  bottom: 90px;
+}
+
+#artworkEight {
+  position: absolute;
+  width: 230px;
+  right: 90px;
+  bottom: 90px;
+}
+
+#artworkNine {
+  position: absolute;
+  width: 230px;
+  right: 180px;
+  bottom: 90px;
+}
+
+.prev {
+  position: fixed;
+  height: 40px;
+  bottom: 15px;
+  right: 57px;
+  cursor: pointer;
+}
+
+.next {
+  position: fixed;
+  height: 40px;
+  bottom: 15px;
+  right: 27px;
+  cursor: pointer;
+}
+
+.back {
+  position: fixed;
+  height: 40px;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.smoothScroll {
+  scroll-behavior:smooth;
+}
